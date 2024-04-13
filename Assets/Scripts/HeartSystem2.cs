@@ -54,4 +54,16 @@ public class HeartSystem2 : MonoBehaviour
             dead = false; // Player is not dead if life is greater than or equal to 1
         }
     }
+        public void RollDice3()
+    {
+        int result = Random.Range(1, 7); // Generate a random number between 1 and 6
+        Debug.Log("Enemy's first dice rolled: " + result);
+    }
+        public void RollDice4()
+    {
+        int result = Random.Range(1, 7); // Generate a random number between 1 and 6
+        Debug.Log("Enemy's second dice rolled: " + result);
+    }
+
+
 }
