@@ -7,9 +7,9 @@ using UnityEngine.UI;
 
 namespace UI.Shop
 {
-    public class MonsterDiceHolder : MonoBehaviour
+    public class NumericalDiceHolder : MonoBehaviour
     {
-        public MonsterDiceSO dice;
+        public NumericalDiceSO dice;
 
         public List<Image> faces;
 
@@ -42,7 +42,7 @@ namespace UI.Shop
         private void BuyItem()
         {
             PlayerInventory.Instance.currentGold -= dice.price;
-            PlayerInventory.Instance.AddMonster(dice);
+            PlayerInventory.Instance.AddNumerical(dice);
             Destroy(gameObject);
         }
     }

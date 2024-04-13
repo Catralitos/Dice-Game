@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8a5b84ce22b4e12b21b6fa628368fb2, type: 3}
+  m_Name: EvenDiceSO
+  m_EditorClassIdentifier: 
+  diceName: Even Dice
+  price: 4
+  faces:
+  - firstMember: 2
+    secondMember: {fileID: -1364138261, guid: 1f519c00aa9e31c4b9191d2065f5d0c1, type: 3}
+  - firstMember: 4
+    secondMember: {fileID: -945102036, guid: 1f519c00aa9e31c4b9191d2065f5d0c1, type: 3}
+  - firstMember: 6
+    secondMember: {fileID: -625763234, guid: 1f519c00aa9e31c4b9191d2065f5d0c1, type: 3}
+  - firstMember: 2
+    secondMember: {fileID: -1364138261, guid: 1f519c00aa9e31c4b9191d2065f5d0c1, type: 3}
+  - firstMember: 4
+    secondMember: {fileID: -945102036, guid: 1f519c00aa9e31c4b9191d2065f5d0c1, type: 3}
+  - firstMember: 6
+    secondMember: {fileID: -625763234, guid: 1f519c00aa9e31c4b9191d2065f5d0c1, type: 3}

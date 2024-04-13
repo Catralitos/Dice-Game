@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55356e7650b7fd244894f49cb3601a8d, type: 3}
+  m_Name: CoinMasterSO
+  m_EditorClassIdentifier: 
+  diceName: Coin Master
+  price: 5
+  monsterStats:
+    attack:
+      firstMember: 5
+      secondMember: 0
+    defense:
+      firstMember: 5
+      secondMember: 1
+  faces:
+  - firstMember: 0
+    secondMember: {fileID: 1064692310, guid: 976efb1973559314eba8c60c83dd1bfa, type: 3}
+  - firstMember: 1
+    secondMember: {fileID: -149429597, guid: 976efb1973559314eba8c60c83dd1bfa, type: 3}
+  - firstMember: 2
+    secondMember: {fileID: 1971112251, guid: 976efb1973559314eba8c60c83dd1bfa, type: 3}
+  - firstMember: 0
+    secondMember: {fileID: 1064692310, guid: 976efb1973559314eba8c60c83dd1bfa, type: 3}
+  - firstMember: 1
+    secondMember: {fileID: -149429597, guid: 976efb1973559314eba8c60c83dd1bfa, type: 3}
+  - firstMember: 2
+    secondMember: {fileID: 1971112251, guid: 976efb1973559314eba8c60c83dd1bfa, type: 3}
