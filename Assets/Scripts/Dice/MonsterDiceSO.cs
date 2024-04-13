@@ -12,17 +12,15 @@ namespace Dice
     }
     
     [CreateAssetMenu(menuName = "Dice/Monster Dice")]
-    public class MonsterDice : ScriptableObject
+    public class MonsterDiceSO : ScriptableObject
     {
         public string diceName;
 
+        public int price;
+        
         public MonsterStats monsterStats;
     
         public List<Pair<MonsterCrests, Sprite>> faces;
-
-        public Pair<MonsterCrests, Sprite> GetRandomFace()
-        {
-            return faces[Random.Range(0, faces.Count)];
-        }
+        
     }
 }

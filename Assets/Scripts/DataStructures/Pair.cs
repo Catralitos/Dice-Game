@@ -1,16 +1,14 @@
 ﻿using System;
-using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace DataStructures
 {
     [Serializable]
-    public class Pair<T,U>
+    public class Pair<T,TU>
     {
         public T firstMember;
-        public U secondMember;
+        public TU secondMember;
 
-        public Pair(T firstMember, U secondMember)
+        public Pair(T firstMember, TU secondMember)
         {
             this.firstMember = firstMember; 
             this.secondMember = secondMember;
