@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: 04e1c69237996bc48809b3f872f2d219
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 8879e3ad4d0c3a549bf2c9c64a0d1303
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: 46e85b5fa6bdeaf4aa00a0762429234f
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/DiceGames/DiceGame.unity
+    guid: 3e42d04828800254c90acde380653bd6
   m_configObjects: {}
