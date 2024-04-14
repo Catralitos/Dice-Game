@@ -21,8 +21,11 @@ public class HeartSystem : MonoBehaviour
     {
         if (dead == true)
         {
-            Debug.Log("Player died!");
-            SceneManager.LoadScene("GameOver");
+        // Show dice roll results in the Text component
+        diceResultText.text = "Player 1 died!";
+
+        // Start a coroutine to hide the text after 5 seconds
+        StartCoroutine(GameOverAfterDelay(5f));
 
         }
     }
@@ -80,4 +83,11 @@ public class HeartSystem : MonoBehaviour
         yield return new WaitForSeconds(delay);
         diceResultText.text = ""; // Clear the text
     }
+
+    IEnumerator GameOverAfterDelay(float delay)
+{
+    yield return new WaitForSeconds(delay);
+    SceneManager.LoadScene("GameOver");
 }
+}
+

@@ -17,12 +17,16 @@ public class HeartSystem2 : MonoBehaviour
         life = hearts.Length;
     }
 
-    void Update2()
+    void Update()
     {
         if (dead == true)
         {
-            Debug.Log("Player 2 died!");
-            SceneManager.LoadScene("GameOver");
+        // Show dice roll results in the Text component
+        diceResultText.text = "Player 2 died!";
+
+        // Start a coroutine to hide the text after 5 seconds
+        StartCoroutine(GameOverAfterDelay(5f));
+
         }
     }
 
@@ -35,13 +39,15 @@ public class HeartSystem2 : MonoBehaviour
             if(life < 1)
             {
                 dead = true;
+
             }
         }
 
     }
+
     public void Defend2(int d)
     {
-        life += d;
+        life += d; // Increase life by the given amount
 
         // Check if the life index is within the bounds of the array
         if (life < hearts.Length)
@@ -53,7 +59,7 @@ public class HeartSystem2 : MonoBehaviour
             }
         }
 
-        // Update the "dead" flag if necessary
+
         if (life >= 1)
         {
             dead = false; // Player is not dead if life is greater than or equal to 1
@@ -78,4 +84,10 @@ public class HeartSystem2 : MonoBehaviour
         diceResultText.text = ""; // Clear the text
     }
 
+    IEnumerator GameOverAfterDelay(float delay)
+{
+    yield return new WaitForSeconds(delay);
+    SceneManager.LoadScene("GameOver");
 }
+}
+
