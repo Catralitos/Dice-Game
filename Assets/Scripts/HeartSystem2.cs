@@ -68,8 +68,8 @@ public class HeartSystem2 : MonoBehaviour
         diceResultText.text = "Player 2's first dice rolled: " + result + "\n" +
                               "Player 2's second dice rolled: " + result2;
 
-        // Start a coroutine to hide the text after 3 seconds
-        StartCoroutine(HideTextAfterDelay(3f));
+        // Start a coroutine to hide the text after 5 seconds
+        StartCoroutine(HideTextAfterDelay(5f));
     }
 
     IEnumerator HideTextAfterDelay(float delay)
