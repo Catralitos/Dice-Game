@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5440533501377622812}
   - component: {fileID: 1982779654970727429}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BuyMonsterButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 2669299171517634422}
   - component: {fileID: 623566109367215694}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: BuyMonsterButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1017,7 +1017,7 @@ GameObject:
   - component: {fileID: 3819275817954044276}
   - component: {fileID: 8454082344194783446}
   m_Layer: 5
-  m_Name: Image
+  m_Name: GoldIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
