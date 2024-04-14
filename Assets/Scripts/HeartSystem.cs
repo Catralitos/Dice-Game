@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class HeartSystem : MonoBehaviour
 {
     public GameObject[] hearts;
     public int life;
     private bool dead;
+    public Text diceResultText;
 
     private void Start()
     {
@@ -18,6 +22,8 @@ public class HeartSystem : MonoBehaviour
         if (dead == true)
         {
             Debug.Log("Player died!");
+            SceneManager.LoadScene("GameOver");
+
         }
     }
 
@@ -30,6 +36,7 @@ public class HeartSystem : MonoBehaviour
             if(life < 1)
             {
                 dead = true;
+
             }
         }
 
@@ -55,15 +62,22 @@ public class HeartSystem : MonoBehaviour
             dead = false; // Player is not dead if life is greater than or equal to 1
         }
     }
-        public void RollDice()
+    public void RollDice()
     {
         int result = Random.Range(1, 7); // Generate a random number between 1 and 6
-        Debug.Log("Player's first dice rolled: " + result);
-    }
-        public void RollDice2()
-    {
-        int result = Random.Range(1, 7); // Generate a random number between 1 and 6
-        Debug.Log("Player's second dice rolled: " + result);
+        int result2 = Random.Range(1, 7); // Generate a random number between 1 and 6
+
+        // Show dice roll results in the Text component
+        diceResultText.text = "Player 1's first dice rolled: " + result + "\n" +
+                              "Player 1's second dice rolled: " + result2;
+
+        // Start a coroutine to hide the text after 3 seconds
+        StartCoroutine(HideTextAfterDelay(3f));
     }
 
+    IEnumerator HideTextAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        diceResultText.text = ""; // Clear the text
+    }
 }
