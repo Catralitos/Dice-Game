@@ -21,6 +21,8 @@ namespace Dice
         public MonsterStats monsterStats;
     
         public List<Pair<MonsterCrests, Sprite>> faces;
-        
+
+        public Sprite monsterSprite;
+
     }
 }

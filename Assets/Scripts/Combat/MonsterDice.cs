@@ -17,17 +17,20 @@ namespace Combat
         
         public readonly List<Pair<MonsterCrests, Sprite>> Faces;
 
-        private bool _summoned;
+        public Sprite monsterSprite;
         
-        public MonsterDice(string monsterName, List<Pair<MonsterCrests, Sprite>> faces)
+        public bool summoned;
+        
+        public MonsterDice(string monsterName, List<Pair<MonsterCrests, Sprite>> faces, Sprite monsterSprite)
         {
             this.monsterName = monsterName;
-            Faces = faces;
+            this.Faces = faces;
+            this.monsterSprite = monsterSprite;
         }
 
         public void Summon(int attack, int defense)
         {
-            _summoned = true;
+            summoned = true;
             this.attack = attack;
             this.defense = defense;
         }
