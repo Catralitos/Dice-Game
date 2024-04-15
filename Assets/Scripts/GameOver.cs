@@ -13,5 +13,6 @@ public class GameOver : MonoBehaviour
     }
     public void ExitButton(){
         Application.Quit();
+        Debug.Log("Exit button clicked in editor.");
     }
 }
