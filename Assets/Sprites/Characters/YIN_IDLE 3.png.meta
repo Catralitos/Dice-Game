@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 56d0447e21763104da93b2c1e2ca4816
+guid: be3ad9a1e27a8004f80d56af286db2e5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -113,12 +113,12 @@ TextureImporter:
       name: YIN_IDLE_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 251
         y: 0
         width: 104
         height: 119
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

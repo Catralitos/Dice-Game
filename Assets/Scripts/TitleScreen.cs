@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class TitleScreen : MonoBehaviour
 {
     public void RestartButton(){
-        SceneManager.LoadScene("DiceGame");
+        SceneManager.LoadScene("ShopScene");
     }
     public void CreditsButton(){
         SceneManager.LoadScene("CreditsScreen");

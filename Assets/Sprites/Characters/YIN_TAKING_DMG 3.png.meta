@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 56d0447e21763104da93b2c1e2ca4816
+guid: b1aa5f90ea6ddb147a9319abde60780e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -49,7 +49,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 16, y: 0, z: 613, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: YIN_IDLE_0
+      name: YIN_TAKING_DMG 3_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 255
         y: 0
-        width: 104
-        height: 119
+        width: 91
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cd729c4f30167b4e86c9cce5bc27b89
-      internalID: 1597596583
+      spriteID: 88bfe272fa2259d4493410ea3f8c7839
+      internalID: 1475552048
       vertices: []
       indices: 
       edges: []
@@ -134,14 +134,14 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      YIN_IDLE_0: 1597596583
+      YIN_TAKING_DMG 3_0: 1475552048
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

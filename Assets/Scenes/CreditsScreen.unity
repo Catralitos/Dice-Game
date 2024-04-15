@@ -1029,7 +1029,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: "Carlos Marques\nDavid Coelho\nJos\xE9 Cutileiro\nGame Dev T\xE9cnico"
+  m_Text: "Carlos Marques\nDavid Coelho\nJos\xE9 Cutileiro\nGame Dev T\xE9cnico\nPixabay
+    - Music"
 --- !u!222 &1348336735
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -548,6 +548,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2147909150650701404, guid: 26e632ab55ca31c449e2beb84d8818a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147909150650701404, guid: 26e632ab55ca31c449e2beb84d8818a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147909150650701404, guid: 26e632ab55ca31c449e2beb84d8818a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2351225431826850138}
+    - target: {fileID: 2147909150650701404, guid: 26e632ab55ca31c449e2beb84d8818a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147909150650701404, guid: 26e632ab55ca31c449e2beb84d8818a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TransitionButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147909150650701404, guid: 26e632ab55ca31c449e2beb84d8818a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Transition, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147909150650701404, guid: 26e632ab55ca31c449e2beb84d8818a0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2382174387852863176, guid: 26e632ab55ca31c449e2beb84d8818a0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1051,8 +1079,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9186868690107935604, guid: 26e632ab55ca31c449e2beb84d8818a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2351225431826850138}
   m_SourcePrefab: {fileID: 100100000, guid: 26e632ab55ca31c449e2beb84d8818a0, type: 3}
+--- !u!1 &2351225431826850137 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9186868690107935604, guid: 26e632ab55ca31c449e2beb84d8818a0, type: 3}
+  m_PrefabInstance: {fileID: 2351225431826850136}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2351225431826850138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351225431826850137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852c6835b81ed1d49aba6e54484241ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
