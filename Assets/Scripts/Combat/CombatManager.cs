@@ -268,7 +268,19 @@ namespace DefaultNamespace
             {
                 switch (_rolledCrests)
                 {
+                    case MonsterCrests.Attack:
                     
+                    break;
+                    case MonsterCrests.Defense:
+                    
+                    break;
+                    case MonsterCrests.Heal:
+                    
+                    break;
+                    
+                    default:
+                    
+                    break;
                 }
             }
         }
