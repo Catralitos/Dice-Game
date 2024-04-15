@@ -15,19 +15,26 @@ namespace Combat
         [HideInInspector] public int attack;
         [HideInInspector] public int defense;
         
-        private readonly List<Pair<MonsterCrests, Sprite>> _faces;
+        public readonly List<Pair<MonsterCrests, Sprite>> Faces;
 
-        public MonsterDice(string monsterName, int attack, int defense, List<Pair<MonsterCrests, Sprite>> faces)
+        private bool _summoned;
+        
+        public MonsterDice(string monsterName, List<Pair<MonsterCrests, Sprite>> faces)
         {
             this.monsterName = monsterName;
+            Faces = faces;
+        }
+
+        public void Summon(int attack, int defense)
+        {
+            _summoned = true;
             this.attack = attack;
             this.defense = defense;
-            _faces = faces;
         }
         
         public Pair<MonsterCrests, Sprite> GetRandomFace()
         {
-            return _faces[Random.Range(0, _faces.Count)];
+            return Faces[Random.Range(0, Faces.Count)];
         }
     }
 }

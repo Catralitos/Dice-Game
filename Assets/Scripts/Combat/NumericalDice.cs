@@ -11,17 +11,17 @@ namespace Combat
     {
         [HideInInspector] public string diceName;
         
-        private readonly List<Pair<int, Sprite>> _faces;
+        public readonly List<Pair<int, Sprite>> Faces;
 
         public NumericalDice(string diceName, List<Pair<int, Sprite>> faces)
         {
             this.diceName = diceName;
-            _faces = faces;
+            Faces = faces;
         }
         
         public Pair<int, Sprite> GetRandomFace()
         {
-            return _faces[Random.Range(0, _faces.Count)];
+            return Faces[Random.Range(0, Faces.Count)];
         }
     }
 }
