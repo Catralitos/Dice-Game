@@ -42,10 +42,29 @@ namespace DefaultNamespace
         
         private void Start()
         {
-            //gerar um deck inimigo a partir da pool de dados no playerinventory
-            //gerar conforme dificuldade
-            //PlayerInventory.Instance
-            StartTurn();
+
+        //gerar um deck inimigo a partir da pool de dados no playerinventory
+        //gerar conforme dificuldade
+        //PlayerInventory.Instance
+
+        // Inicializar listas
+        _monstersInPlaySO = new List<MonsterDiceSO>();
+        _numericalInPlaySO = new List<NumericalDiceSO>();
+        _monstersInPlayEnemySO = new List<MonsterDiceSO>();
+        _numericalInPlayEnemySO = new List<NumericalDiceSO>();
+        _monsterGraveyard = new List<MonsterDiceSO>();
+        _numericalGraveyard = new List<NumericalDiceSO>();
+        _monsterGraveyardEnemy = new List<MonsterDiceSO>();
+        _numericalGraveyardEnemy = new List<NumericalDiceSO>();
+        _rolledCrests = new List<MonsterCrests>();
+
+        // obter decks do PlayerInventory
+        _monsterDeck = PlayerInventory.Instance.fullMonsterDicePool;
+        _numericalDeck = PlayerInventory.Instance.fullNumericalDicePool;
+        _monsterDeckEnemy = new List<MonsterDiceSO>();
+        _numericalDeckEnemy = new List<NumericalDiceSO>();
+
+        StartTurn();
         }
 
         private void StartTurn()
